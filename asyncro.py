@@ -8,7 +8,8 @@ import aiohttp
 
 
 async def fetch(s, url):
-    async with s.get(f'http://127.0.0.1:8000/items/{url}') as r:
+    async with s.get(f'http://172.27.232.62:8080') as r:
+        
         if r.status != 200:
             r.raise_for_status()
         return await r.text()
@@ -27,7 +28,7 @@ async def main():
     urls = range(1, 25000)
     async with aiohttp.ClientSession() as session:
         htmls = await fetch_all(session, urls)
-        print(htmls)
+        # print(htmls)
 
 
 if __name__ == '__main__':
@@ -37,3 +38,4 @@ if __name__ == '__main__':
     print("time taken:", stop - start)
     # time taken: 14.692326207994483
     # time taken: 14.926093921000302
+    # time taken: 14.43824927300011

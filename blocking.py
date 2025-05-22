@@ -6,7 +6,7 @@ start = perf_counter()
 
 
 for x in range(1, 25000):
-    r = requests.get(f'http://127.0.0.1:8000/items/{x}')
+    r = requests.get(f'http://127.0.0.1:8080/items/{x}')
     print(r.json())
 
 stop = perf_counter()

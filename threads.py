@@ -2,6 +2,7 @@
 
 from concurrent.futures import ThreadPoolExecutor
 
+
 from time import perf_counter
 import requests
 
