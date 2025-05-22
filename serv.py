@@ -19,7 +19,7 @@ async def read_item(item_id: int):
     return {"item_id": item_id, "message": mystr}
 
 # run the server with:
-# uvicorn serv:app --host 0.0.0.0 --port 8000 --reload
+# uvicorn serv:app --host 0.0.0.0 --port 8080 --reload
 # or
-# python -m uvicorn serv:app --host 0.0.0.0 --port 8000 --reload
+# python -m uvicorn serv:app --host 0.0.0.0 --port 8080 --reload
 

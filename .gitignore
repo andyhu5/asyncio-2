@@ -1,2 +1,5 @@
 /.mypy_cache
 /__pycache__
+RandomStringApi/bin/*
+RandomStringApi/obj/*
+serv_rust/target/*

@@ -8,7 +8,7 @@ import aiohttp
 
 
 async def fetch(s, url):
-    async with s.get(f'http://172.27.232.62:8080') as r:
+    async with s.get(f'http://localhost:8080') as r:
         
         if r.status != 200:
             r.raise_for_status()
